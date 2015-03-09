@@ -1,0 +1,32 @@
+title =                      "XPS 730x"
+languageCode =               "en-us"
+
+# hostname (and path) to the root eg. http://spf13.com/
+baseurl =                    "http://730x.org/" 
+canonifyUrls =               true
+
+# include content marked as draft
+buildDrafts =                true 
+
+# Do not build RSS files
+disableRSS =                 true  
+
+footnoteAnchorPrefix =       ""
+footnoteReturnLinkContents = ""
+
+# edit new content with this editor, if provided
+editor =                     ""
+newContentEditor =           ""
+
+paginate =                   10
+paginatePath =               "page"
+#permalinks =                 ""
+
+[blackfriday]
+	plainIdAnchors = true
+	extensions = ["HTML_NOFOLLOW_LINKS", "EXTENSION_STRIKETHROUGH"]
+
+[permalinks]
+	article = "/:title/"
+	file = "/file/:filename/"
+	image = "/file/:filename/"

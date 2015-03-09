@@ -1,0 +1,10 @@
+
+{{ if and (.IsPage) (not .Params.draft) }}
+
+	<div class="alert alert-dismissible alert-warning">
+		<button type="button" class="close" data-dismiss="alert">×</button>
+		<h4>This is a Draft</h4>
+		<p>The content on this page is and may continue to undergo major edits until completion.  If you would like to help, you can read more about <a href="/site/how-to-contribute/" class="alert-link">how to contribute</a> to this site.  You can also read <a href="/site/draft-content/" class="alert-link">why is that article a draft</a> in the first place.</p>
+	</div>
+
+{{ end }}

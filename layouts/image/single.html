@@ -1,0 +1,32 @@
+{{ partial "header.html" . }}
+{{ partial "navbar.html" . }}
+
+	<div class="container">
+
+		<h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+
+		{{ with .Params.subheader }}
+		<span class="lead"><p>{{ . }}</p></span>
+		{{ end }}
+
+		<div class="post">
+			
+			{{ with .Params.summary }}<p>{{ . }}</p>{{ end }}
+
+			{{ with .TableOfContents }}
+			<div class="well col-xs-12 col-md-6 col-lg-4">
+				<b>Contents</b>
+				{{ . }}
+			</div>
+			<div class="clearfix"></div>{{ end }}
+
+			{{ partial "single-notice.html" . }}
+
+			{{ .Content }}
+		</div>
+
+		{{ partial "container-footer.html" . }}
+ 
+	 </div>
+	 
+{{ partial "footer.html" . }}
