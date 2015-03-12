@@ -24,6 +24,11 @@ body{
 	margin-top: 15px;
 }
 
+ul#site-navigation {
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
 nav#TableOfContents {
 }
 	nav#TableOfContents ul {
