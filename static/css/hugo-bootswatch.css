@@ -1,11 +1,24 @@
 body{
+	font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
     padding-top:50px;
 }
 
 .jumbotron, .carousel {
 	margin-top: 20px;
-	height: 400px;
 }
+	.carousel-caption {
+		background: rgba(0, 0, 0, 0.75);
+		left: 0;
+		right: 0;
+		bottom: 0;
+		padding: 0;
+		text-align: inherit;
+	}
+		.carousel-caption h2 {
+			padding: 15px;
+		}
+	.carousel-indicators {
+	}
 
 .alert {
 	margin-top: 15px;
