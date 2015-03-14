@@ -1,7 +1,3 @@
-.panel-group {
-	margin-top: 20px;
-}
-
 body{
 	font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
 	padding-top: 50px;
@@ -24,8 +20,11 @@ body{
 	.carousel-indicators {
 	}
 
+.panel-group {
+	margin-top: 20px;
+}
+
 .alert {
-	margin-top: 15px;
 }
 
 nav#TableOfContents {
