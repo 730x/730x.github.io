@@ -1,0 +1,24 @@
+		<div class="col-sm-3 col-sm-pull-9 hidden-xs hidden-print">
+			<nav class="panel-group" id="site-nav" role="tablist" aria-multiselectable="true">
+				<div class="panel panel-default">
+					{{ $currentNode := . }}{{ range .Site.Menus.sitenav }}{{ if .HasChildren }}
+					<div id="page-{{ .Identifier }}-heading" class="panel-heading" role="tab">
+						<h4 class="panel-title"><a href="#page-{{ .Identifier }}" aria-controls="page-{{ .Identifier }}" data-parent="#site-nav" aria-expanded="{{ if $currentNode.HasMenuCurrent "sitenav" . }}true{{ else }}false{{ end }}" data-toggle="collapse">
+							{{ .Pre }}{{ .Name }}{{ .Post }}<span class="caret"></span></a></h4>
+					</div>
+					<div id="page-{{ .Identifier }}" aria-labelledby="page-{{ .Identifier }}-heading" class="panel-collapse collapse{{ if $currentNode.IsMenuCurrent "sitenav" . }} in{{ end }}" role="tabpanel" >
+						<ul class="list-group">
+							{{ range .Children }}
+							<li class="list-group-item{{ if $currentNode.IsMenuCurrent "sitenav" . }} active{{ end }}"><a href="{{ .Url }}">
+							{{ .Pre }}{{ .Name }}{{ .Post }}</a></li>{{ end }}
+						</ul>
+					</div>
+					{{ else }}
+					<div id="page-{{ .Identifier }}-heading" class="panel-heading" role="tab">
+						<h4 class="panel-title"><a href="{{ .Url }}" data-parent="#site-nav">
+							{{ .Pre }}{{ .Name }}{{ .Post }}</a></h4>
+					</div>
+				{{ end }}{{ end }}
+				</div>
+			</nav>
+		</div>

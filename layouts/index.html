@@ -1,12 +1,10 @@
 {{ partial "header.html" . }}
-
 <div class="container">
-
-	<div class="row">
+	<div class="row hidden-xs">
 		<div class="col-12">
 			<div id="carousel-homepage" class="carousel slide" data-ride="carousel">
 				<!-- Indicators -->
-				<!-- <ol class="carousel-indicators">
+				<!-- <ol class="carousel-indicators text-right">
 					<li data-target="#carousel-homepage" data-slide-to="0" class="active"></li>
 					<li data-target="#carousel-homepage" data-slide-to="1"></li>
 					<li data-target="#carousel-homepage" data-slide-to="2"></li>
@@ -18,7 +16,7 @@
 				<!-- Wrapper for slides -->
 				<div class="carousel-inner" role="listbox">
 					<div class="item active">
-						<img src="/images/slider/730x-upgrading-the-motherboard-2.jpg" alt="730x upgrade motherboard">
+						<img src="/images/slider/730x-upgrading-the-motherboard-2.jpg" alt="730x upgrade motherboard" class="img-responsive">
 						<div class="container">
 							<div class="carousel-caption">
 								<h2>Replacing the 730x Motherboard</h2>
@@ -26,7 +24,7 @@
 						</div>
 					</div>
 					<div class="item">
-						<img src="/images/slider/730x-bios-upgrade-disable-power-light.jpg" alt="730x bios upgrade disable power light">
+						<img src="/images/slider/730x-bios-upgrade-disable-power-light.jpg" alt="730x bios upgrade disable power light" class="img-responsive">
 						<div class="container">
 							<div class="carousel-caption">
 								<h2>Bios Upgrade and Power Light Fix</h2>
@@ -34,7 +32,7 @@
 						</div>
 					</div>
 					<div class="item">
-						<img src="/images/slider/730x-replacing-fans-pwm-adapter.jpg" alt="730x replacing fans pwm adapter">
+						<img src="/images/slider/730x-replacing-fans-pwm-adapter.jpg" alt="730x replacing fans pwm adapter" class="img-responsive">
 						<div class="container">
 							<div class="carousel-caption">
 								<h2>Replacing the Fans with a PWM Adapter</h2>
@@ -42,7 +40,7 @@
 						</div>
 					</div>
 					<div class="item">
-						<img src="/images/slider/730x-h2c.jpg" alt="730x h2c">
+						<img src="/images/slider/730x-h2c.jpg" alt="730x h2c" class="img-responsive">
 						<div class="container">
 							<div class="carousel-caption">
 								<h2>XPS 730x H<sub>2</sub>C Watercooling System</h2>
@@ -50,7 +48,7 @@
 						</div>
 					</div>
 					<div class="item">
-						<img src="/images/slider/730x-modified-h2c-fix.jpg" alt="730x repair fix h2c modify">
+						<img src="/images/slider/730x-modified-h2c-fix.jpg" alt="730x repair fix h2c modify" class="img-responsive">
 						<div class="container">
 							<div class="carousel-caption">
 								<h2>Repairing and Modifying the H<sub>2</sub>C</h2>
@@ -58,7 +56,7 @@
 						</div>
 					</div>
 					<div class="item">
-						<img src="/images/slider/730x-custom-water-cooling.jpg" alt="730x water cooling">
+						<img src="/images/slider/730x-custom-water-cooling.jpg" alt="730x water cooling" class="img-responsive">
 						<div class="container">
 							<div class="carousel-caption">
 								<h2>Extreme Upgrades</h2>
@@ -84,6 +82,8 @@
 		<div class="col-md-9 col-md-push-3">
 			<h1>Dell XPS 730x</h1>
 
+			<img src="/images/Dell_XPS_730x_Stealth_Blue.jpg" alt="Dell XPS 730x in Stealth Blue" class="visible-xs-block img-responsive center-block">
+
 			<p>This is a wiki dedicated to the Dell XPS 730x systems.  Here you will find non-documented manuals and procecures, software and drivers, instructions on how to modify your system and a lot more.</p>
 
 			<h2>What You'll Find Here</h2>
@@ -104,7 +104,7 @@
 
 			<p>In 2006, while working with Microsoft partners I had a contract to develop a new-type of blog for Dell called the Dell One2One.  It was awesome - direct access to Dell engineers blogging about their latest breakthroughs and development.  How to overclock and upgrade your systems, what was in the pipeline, prototype behemoths, etc.</p>
 
-			<p>It was at this Dell weblog that I was introduced to the XPS 700 series: a "user-upgradeable" system for the high-end consumers.  This fascinated me knowing that while all other Dell systems I setup for job sites were all proprietary components, this XPS 700 series used real ATX-compatible components.  It was event advertised as "User-Upgradeable."  When the "prototype" of the XPS 730 with full ATX components was announced I started to say, "If I ever bought a complete desktop system, it would be the XPS 730 series."</p>
+			<p>It was at this Dell weblog that I was introduced to the XPS 700 series: a "user-upgradeable" system for the high-end consumers.  This fascinated me knowing that while all other Dell systems were all proprietary components, this XPS 700 series used real ATX-compatible components.  It was even advertised as "User-Upgradeable."  When the "prototype" of the XPS 730 with full ATX components was announced I started to say, "If I ever bought a complete desktop system, it would be the XPS 730 series."</p>
 
 			<p>In the spring of 2009, that dream came true.  While the astronomical price of the new high-end H<sub>2</sub>C options was out of my range, I found the "low end" versions of the XPS 730X (Core i7) in the Dell Outlet (refurbs).  The idea that I apply to building my own systems was applied here: buy good chassis and motherboard, buy cheap components and upgrade the components as the prices drop.</p>
 
@@ -112,14 +112,13 @@
 
 			<blockquote>
 				<p><cite>I immediately opened the Alienware Area-51 ALX up and to my surprise found the exact same motherboard and components as my XPS 730X!</cite></p>
-				<small>Eric Duncan</small>
 			</blockquote>
 
 			<p>It was at this time I decided to hoard all materials, drivers and software I could find on the system.  In November 2009, my suspicions was certified with an announcement by Dell that they have discontinued the XPS 700 series indefinitely.  The facts are there above: the same high-end components were in both the Dell XPS 730X and the Alienware Area-51 with the Alienware being more profitable.  Rumors were blogged that Dell, who owns Alienware, decided that the XPS 730X was competing for gaming sales and cutting into margins (profits).  Therefore, it was canceled.</p>
 
 			<p>Dell, while officially continuing to support their warranty, dropped all internal support for the XPS 730X; broken links stayed broken, customers with problems were offered Alienware machines as replacements instead of parts being sent out, etc.</p>
 
-			<p>Later, a community started to form on Facebook to continue support of this XPS 700 series machines; it was here I started to document my reverse engineering, experiments and findings.  But this Facebook group was not the ideal medium for the mass market to read and apply settings.  For one, a single long Wiki-like post was quickly dropped off the frontpage.  The Facebook group search sucked, etc.  I found myself often repeating the exact same response over and over again, a few months later when someone asked the same question.  I stayed up into the wee hours of the night answering 100s (1000s?) of postings to this Facebook group and repeating myself over and over, just to answer the same question I did a month earlier (because I couldn't link to previous posts) just was too much.</p>
+			<p>Later, a community started to form on Facebook to continue support of this XPS 700 series machines; it was here I started to document my reverse engineering, experiments and other findings.  But this Facebook group was not the ideal medium for the mass market to read and apply settings.  For one, a single long Wiki-like post was quickly dropped off the frontpage.  The Facebook group search sucked, etc.  I found myself often repeating the exact same response over and over again, a few months later when someone asked the same question.  I stayed up into the wee hours of the night answering 100s (1000s?) of postings to this Facebook group and repeating myself over and over, just to answer the same question I did a month earlier (because I couldn't link to previous posts) just was too much.</p>
 
 			<p>In 2012, I took matters in my own hands to make sure there was documentation for the community: and thus, 730x.org was born.</p>
 
@@ -145,32 +144,15 @@
 
 			<p>But wait, there's more!  Have you heard of the Way Back Machine?  This is the Internet's archive of all things internet.  Since this is a static site, you can easily browse the site there if it ever goes offline: http:;/archive.org/730x.org.  Even better, while this V1 version doesn't have the AARP tags, that will be introduced in future releases after I get my content released.  Why AARP?  This ensures screen-readers will cache the content for offline viewing.</p>
 
-			<p>This now leaves two forms of maintenance for me to keep the wiki up: keeping the DNS entries updated to wherever the site is hosted; and, moving the site to another static provider if GitHub becomes unavailable.  To ensure these, I have enlisted two personal friends to help with this.  We form a sort of "730x committee" that has single purpose: how to keep the site live.  In the event of one of our deaths, the other two have all access.  As long as all three of us do no disappear, the site should remain online now and at least until 2027.</p>
+			<p>This now leaves two forms of maintenance to keep the wiki up: keeping the DNS entries updated to wherever the site is hosted; and, moving the site to another static provider if GitHub becomes unavailable.  To ensure these, I have enlisted two individuals to help with this that I have known for over 10 years.  We have formed a sort of "730x committee" that has a single purpose: how to keep the site live.  In the event of one of our deaths, the other two have all access.  As long as all three of us do no disappear, the site should remain online now and at least until 2027.</p>
+
+			<p>I believe I have addressed most edge cases.  It is my hope that these steps help secure 730x.org now, and for the future.  -<a href="http://eduncan911.com/">Eric</a></p>
 
 		</div>
-		<div class="col-md-3 col-md-pull-9">
-			<ul id="site-navigation" class="nav nav-pills nav-stacked">
-				<li class="active"><a href="#">Home</a></li>
-				<li><a href="#">Profile</a></li>
-				<li class="disabled"><a href="#">Disabled</a></li>
-				<li class="dropdown">
-					<a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
-						Dropdown <span class="caret"></span>
-					</a>
-					<ul class="dropdown-menu">
-						<li><a href="#">Action</a></li>
-						<li><a href="#">Another action</a></li>
-						<li><a href="#">Something else here</a></li>
-						<li class="divider"></li>
-						<li><a href="#">Separated link</a></li>
-					</ul>
-				</li>
-			</ul>
-		</div>
+{{ partial "sidebar.html" . }}
 	</div>
-
-	{{ partial "navbar.html" . }}
-	{{ partial "container-footer.html" . }}
 </div>
 
+{{ partial "navbar.html" . }}
+{{ partial "container-footer.html" . }}
 {{ partial "footer.html" . }}

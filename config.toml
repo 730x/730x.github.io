@@ -30,3 +30,69 @@ paginatePath =               "page"
 	article = "/:title/"
 	file = "/file/:filename/"
 	image = "/file/:filename/"
+
+[[menu.sitenav]]
+identifier = "h2c"
+menu = "h2c"
+pre = "H<sub>"
+name = "2"
+post = "</sub>C Cooling System"
+url = "/h2c/"
+weight = -100
+[[menu.sitenav]]
+	parent = "h2c"
+	name = "Overview"
+	url = "/h2c/"
+	weight = -500
+[[menu.sitenav]]
+	parent = "h2c"
+	name = "Wiring & Pin-outs"
+	url = "/h2c-wiring/"
+	weight = -400
+[[menu.sitenav]]
+	parent = "h2c"
+	name = "TEC Cooling System"
+	url = "/h2c-tec/"
+	weight = -300
+[[menu.sitenav]]
+	parent = "h2c"
+	name = "Repairing the H2C"
+	url = "/h2c-repairing/"
+	weight = -200
+[[menu.sitenav]]
+	parent = "h2c"
+	name = "Modifying the H2C"
+	url = "/h2c-mods/"
+	weight = -100
+[[menu.sitenav]]
+identifier = "mobo"
+menu = "mobo"
+name = "Motherboard"
+url = "/mobo/"
+weight = -90
+[[menu.sitenav]]
+	parent = "mobo"
+	name = "Overview "
+	url = "/mobo/"
+	weight = -400
+[[menu.sitenav]]
+	parent = "mobo"
+	name = "Upgrading Motherboard"
+	url = "/upgrading-motherboard/"
+	weight = -300	
+[[menu.sitenav]]
+	parent = "mobo"
+	name = "BIOS"
+	url = "/bios/"
+	weight = -200
+[[menu.sitenav]]
+	parent = "mobo"
+	name = "Motherboard Wiring"
+	url = "/motherboard-wiring/"
+	weight = -100
+[[menu.sitenav]]
+identifier = "support"
+menu = "support"
+name = "Support"
+url = "/support/"
+weight = -10
