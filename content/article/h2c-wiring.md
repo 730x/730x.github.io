@@ -16,9 +16,9 @@ video = ""
     identifier = "h2c-wiring"
     name = "2"
     parent = "h2c"
-    post = "</sub>C Wiring & Pin-outs"
+    post = "</sub>C Wiring / Pin-outs"
     pre = "H<sub>"
-    weight = 2
+    weight = 5
 
 +++
 

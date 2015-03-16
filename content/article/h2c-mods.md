@@ -14,11 +14,11 @@ video = ""
 [menu]
   [menu.sitenav]
     identifier = "h2c-mods"
-    name = "Modifying & Replacing"
+    name = "Modifying"
     parent = "h2c"
     post = ""
     pre = ""
-    weight = 0
+    weight = 4
 
 +++
 

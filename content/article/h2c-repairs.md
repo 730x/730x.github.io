@@ -14,11 +14,11 @@ video = ""
 [menu]
   [menu.sitenav]
     identifier = "h2c-repairs"
-    name = "Repairs & Restoring"
+    name = "Repairing"
     parent = "h2c"
     post = ""
     pre = ""
-    weight = 0
+    weight = 3
 
 +++
 
