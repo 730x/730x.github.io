@@ -1,0 +1,5 @@
+{{ if len(.Inner) < 1 }}WARNING: MISSING CLOSING </blockquote> TAG{{ end }}
+<blockquote{{ with .Get "reverse"}} class="blockquote-reverse"{{ end }}>
+  <p>{{ .Inner }}</p>
+  <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+</blockquote>
