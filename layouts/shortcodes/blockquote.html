@@ -1,5 +1,10 @@
-{{ if len(.Inner) < 1 }}WARNING: MISSING CLOSING </blockquote> TAG{{ end }}
+<!-- 
+Usage:
+	blockquote author="## AUTHOR ##" link="## LINK ##" linktext="## LINKTEXT ##" reverse="true"
+	## QUOTE HERE ##
+	/blockquote
+-->
 <blockquote{{ with .Get "reverse"}} class="blockquote-reverse"{{ end }}>
   <p>{{ .Inner }}</p>
-  <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+  {{ if .Get "author" }}<footer><strong>{{ .Get "author" }}</strong>{{ if and (.Get "link") (.Get "linktext") }} <cite><a href="{{ .Get "link" }}">{{ .Get "linktext" }}</a></cite>{{ end }}</footer>{{ end }}
 </blockquote>
