@@ -31,6 +31,10 @@ The H<sub>2</sub>Ceramic Cooling System (aka H<sub>2</sub>C and H<sub>2</sub>C H
 
 The unit is basically a [thermoelectric](http://en.wikipedia.org/wiki/Thermoelectric_cooling "Wikipedia: Thermoeletric Cooling")/water-cooling hybrid design using a single 120mm x 38mm radiator, four 35W TEC plates on a waterchiller block, a thermistor, a waterpump, and two waterblocks (one for the CPU and one for the [Intel X58](http://en.wikipedia.org/wiki/Intel_X58 "Wikipedia: Intel X58") chipset's [Northbridge](http://en.wikipedia.org/wiki/Northbridge_(computing) "Wikipedia: Northbridge")).  The final component is a Dell proprietary [[mcb|Master Control Board (MCB)]] with firmware programmed to monitor ambient temps as well as the temp of the CPU and waterchiller block - all to control the TEC plates with variable voltages.
 
+{{< blockquote author="Eric Duncan" link="http://eduncan911.com" linktext="eduncan911.com" >}}
+I immediately opened the Alienware Area-51 ALX up and to my surprise found the exact same motherboard and components as my XPS 730X!
+{{< /blockquote >}}
+
 ### Dell's H<sub>2</sub>C Design
 With a little marketing hype, Dell announced their DELL H<sub>2</sub> TECHNOLOGY: HYBRID COOLING FOR OVERCLOCKED CPUs.  The original marketing material has been removed from Dell's website, therefore I am hosting the only copy that I know of in existence.
 
