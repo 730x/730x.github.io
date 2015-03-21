@@ -35,15 +35,15 @@ paginatePath =               "page"
 	identifier = "h2c"
 	name = "2"
 	pre = "H<sub>"
-	post = "</sub>C Cooling System"
+	post = "</sub>C"
 	weight = 1
 [[menu.sitenav]]
 	identifier = "mobo"
-	name = "Motherboard"
+	name = "Mobo"
 	weight = 2
 [[menu.sitenav]]
 	identifier = "mcb"
-	name = "Master Control Board"
+	name = "MCB"
 	weight = 3
 [[menu.sitenav]]
 	identifier = "chassis"

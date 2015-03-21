@@ -18,7 +18,7 @@ video = ""
     parent = ""
     post = ""
     pre = ""
-    weight = 0
+    weight = 10
 
 +++
 

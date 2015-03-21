@@ -1,4 +1,4 @@
-<div class="navbar navbar-default navbar-fixed-top hidden-print">
+<div class="navbar navbar-default navbar-static-top hidden-print" role="navigation">
 	<div class="container hidden-print">
 		<div class="navbar-header">
 			<a href="/" class="navbar-brand">{{ .Site.Title }}</a>
@@ -8,16 +8,22 @@
 				<span class="icon-bar"></span>
 			</button>
 		</div>
-		<div class="navbar-collapse collapse" id="navbar-main">
+		<div id="navbar-main" class="navbar-collapse collapse">
 			<ul class="nav navbar-nav navbar-right">
-			 <li class="dropdown">
-					<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="sections">Sections<span class="caret"></span></a>
+				{{ $currentNode := . }}{{ range .Site.Menus.sitenav }}{{ if .HasChildren }}
+				<li class="dropdown{{ if $currentNode.HasMenuCurrent "sitenav" . }} active{{ end }}">
+					<a id="section-{{ .Identifier }}" class="dropdown-toggle" data-toggle="dropdown" href="#">{{ .Pre }}{{ .Name }}{{ .Post }}<span class="caret"></span></a>
 					<ul class="dropdown-menu" aria-labelledby="download">
-					{{ range .Site.Pages.GroupBy "Section" }}
-						<li><a href="/{{ .Key }}">{{ .Key }}</a></li>
-					{{ end }}
+						{{ range .Children }}
+						<li{{ if $currentNode.HasMenuCurrent "sitenav" . }} class="active"{{ end }}><a href="{{ .Url }}">{{ .Pre }}{{ .Name }}{{ .Post }}</a></li>
+						{{ end }}
 					</ul>
-				</li> 
+				</li>
+				{{ else }}
+				<li>
+					<a id="section-{{ .Identifier }}" href="{{ .Url }}">{{ .Pre }}{{ .Name }}{{ .Post }}</a>
+				</li>
+				{{ end }}{{ end }} 
 			</ul>
 		</div>
 	</div>
