@@ -22,6 +22,12 @@ video = ""
 
 +++
 
+
+{{< link "h2c" "H<sub>2</sub>C" >}}
+
+{{< file "Utility-Alienware AlienFX-R202930.zip" >}}
+
+
 [[File:hothardware-big xps 730 h2c1.jpg|thumbnail|XPS 730X H2C (front)]]
 [[File:hothardware-big xps 730 h2c2.jpg|thumbnail|XPS 730X H2C (back)]]
 
