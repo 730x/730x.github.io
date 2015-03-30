@@ -1,4 +1,5 @@
 {{ partial "header.html" . }}
+{{ partial "navbar.html" . }}
 <div class="container">
 	<div class="row hidden-xs">
 		<div class="col-12">
@@ -79,7 +80,7 @@
 	</div>
 
 	<div class="row">
-		<div class="col-md-9 col-md-push-3">
+		<div class="col-md-9">
 			<h1>Dell XPS 730x</h1>
 
 			<img src="/images/Dell_XPS_730x_Stealth_Blue.jpg" alt="Dell XPS 730x in Stealth Blue" class="visible-xs-block img-responsive center-block">
@@ -149,7 +150,46 @@
 			<p>I believe I have addressed most edge cases.  It is my hope that these steps help secure 730x.org now, and for the future.  -<a href="http://eduncan911.com/">Eric</a></p>
 
 		</div>
-{{ partial "sidebar.html" . }}
+		<div class="col-md-3 hidden-sm hidden-print">
+			<div class="xps-toc affix-top" data-spy="affix" data-offset-top="0">
+				<nav id="TableOfContents">
+					<ul class="nav">
+						<li>
+							<ul class="nav">
+								<li><a href="#overview">Overview</a>
+									<ul class="nav">
+										<li><a href="#dell-s-h-sub-2-sub-c-design">Dell’s H<sub>2</sub>C Design</a>
+											<ul class="nav">
+												<li><a href="#targeting-cooling-of-just-above-ambient">Targeting cooling of just above ambient</a></li>
+												<li><a href="#runs-quieter-than-standard-water-cooling">Runs quieter than standard water-cooling</a></li>
+											</ul></li>
+										<li><a href="#who-made-the-h-sub-2-sub-c-units-to-begin-with-was-it-really-dell">Who made the H<sub>2</sub>C units to begin with?  Was it really Dell?</a></li>
+									</ul></li>
+								<li><a href="#problems-with-the-h-sub-2-sub-c">Problems with the H<sub>2</sub>C</a>
+									<ul class="nav">
+										<li><a href="#design-flaws">Design Flaws</a>
+											<ul class="nav">
+												<li><a href="#too-slow-to-ramp-up-under-demand">Too slow to ramp-up under demand</a></li>
+												<li><a href="#operating-range-too-high-for-extreme-overclocking">Operating range too high for extreme overclocking</a></li>
+											</ul></li>
+										<li><a href="#assembly-flaws">Assembly Flaws</a>
+											<ul class="nav">
+												<li><a href="#delphi-h-sub-2-sub-c-rev-a00">Delphi H<sub>2</sub>C Rev A00</a></li>
+												<li><a href="#coolit-h-sub-2-sub-c-rev-a01-and-rev-a02">CoolIT H<sub>2</sub>C Rev A01 and Rev A02</a></li>
+											</ul></li>
+										<li><a href="#scale-buildup">Scale Buildup</a></li>
+									</ul></li>
+								<li><a href="#repairing-the-xps-730x-h-sub-2-sub-c">Repairing the XPS 730X H<sub>2</sub>C</a></li>
+								<li><a href="#modifying-the-xps-730x-h-sub-2-sub-c">Modifying the XPS 730X H<sub>2</sub>C</a></li>
+								<li><a href="#xps-730x-h-sub-2-sub-c-wiring">XPS 730X H<sub>2</sub>C Wiring</a></li>
+								<li><a href="#xps-730x-tec-and-waterchiller-details">XPS 730X TEC and Waterchiller Details</a></li>
+								<li><a href="#see-also">See also</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
 	</div>
 </div>
 

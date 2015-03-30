@@ -22,14 +22,6 @@ body{
 	margin-top: 20px;
 }
 
-
-.affix {
-}
-	.affix-top {
-	}
-	.affix-bottom {
-	}
-
 .xps-toc {
 	padding-top:20px;
 	width: 300px;
@@ -48,10 +40,10 @@ body{
 		}
 		.xps-toc > nav > ul.nav > li > ul.nav > li > a:focus,
 		.xps-toc > nav > ul.nav > li > ul.nav > li > a:hover {
-			border-left: 2px solid #eee;
+			border-left: 2px solid #efefef;
 		}
 		.xps-toc > nav > ul.nav > li.active > ul.nav > li.active > a {
-			border-left: 2px solid #aaa;
+			border-left: 2px solid #337AB7;
 		}
 			.xps-toc > nav > ul.nav > li > ul.nav > li > ul.nav > li {
 				display: none;
@@ -60,20 +52,20 @@ body{
 				display: block;
 			}
 			.xps-toc > nav > ul.nav > li > ul.nav > li > ul.nav > li > a {
-				border-left: 2px solid #ddd;
+				border-left: 2px solid #efefef;
 				padding-left: 31px;
 				font-weight: bolder;
 			}
 			.xps-toc > nav > ul.nav > li.active > ul.nav > li.active > ul.nav > li.active > a {
-				border-left: 2px solid #aaa;
+				border-left: 2px solid #337AB7;
 			}
 				.xps-toc > nav > ul.nav > li > ul.nav > li > ul.nav > li > ul.nav > li > a {
-					border-left: 2px solid #ddd;
+					border-left: 2px solid #efefef;
 					padding-left: 46px;
 					font-size: 90%;
 				}
 				.xps-toc > nav > ul.nav > li.active > ul.nav > li.active > ul.nav > li.active > ul.nav > li.active > a {
-					border-left: 2px solid #aaa;
+					border-left: 2px solid #337AB7;
 				}
 
 .xps-footer {
