@@ -6,30 +6,4 @@ Usage:
 		Param 2 (OPTIONAL): The anchor text.  Will use the page's title if not specified.
 		Param 3 (OPTIONAL): The anchor title.  Will use the page's title if not specified.
 
--->
-{{ if not .Params }}
-<font color="red"><strong>[Error: Must Specify Link]</strong></font>
-{{ else }}
-	{{ $link := .Get 0 }}
-	{{ $len := .Params | len }}
-	{{ $has_text := or (eq $len 2) (eq $len 3) }}
-	{{ $has_title := eq $len 3 }}
-  	{{ $articles := where .Page.Site.Pages "UrlPath.Url" $link }}
-  	{{ if not $articles }}
-  		<font color="red"><strong>[Error: Url "{{ $link }}" not found]</strong></font>
-  	{{ else if ne (len $articles) 1 }}
-  		<font color="red"><strong>[Error: More Than 1 Article Found For Url "{{ $link }}" ]</strong></font>
-  	{{ else }}
-	 	{{ $page := index $articles 0 }}
-	 	{{ if $has_title }}
-	 		{{ $title := .Get 2 }}
-	 		{{ $text := .Get 1 }}
-	 		<a href="/{{ $page.UrlPath.Url }}/" title="{{ $title }}">{{ $text | safeHtml }}</a>
-	 	{{ else if $has_text }}
-	 		{{ $text := .Get 1 }}
-	 		<a href="/{{ $page.UrlPath.Url }}/" title="{{ $page.Title }}">{{ $text | safeHtml }}</a>
-	 	{{ else }}
-		 	<a href="/{{ $page.UrlPath.Url }}/" title="{{ $page.Title }}">{{ $page.Title | safeHtml }}</a>
-	 	{{ end }}
-	{{ end }}
-{{ end }}
+-->{{ if not .Params }}<font color="red"><strong>[Error: Must Specify Link]</strong></font>{{ else }}{{ $link := .Get 0 }}{{ $len := .Params | len }}{{ $has_text := or (eq $len 2) (eq $len 3) }}{{ $has_title := eq $len 3 }}{{ $articles := where .Page.Site.Pages "UrlPath.Url" $link }}{{ if not $articles }}<font color="red"><strong>[Error: Url "{{ $link }}" not found]</strong></font>{{ else if ne (len $articles) 1 }}<font color="red"><strong>[Error: More Than 1 Article Found For Url "{{ $link }}" ]</strong></font>{{ else }}{{ $page := index $articles 0 }}{{ if $has_title }}{{ $title := .Get 2 }}{{ $text := .Get 1 }}<a href="/{{ $page.UrlPath.Url }}/" title="{{ $title }}">{{ $text | safeHtml }}</a>{{ else if $has_text }}{{ $text := .Get 1 }}<a href="/{{ $page.UrlPath.Url }}/" title="{{ $page.Title }}">{{ $text | safeHtml }}</a>{{ else }}<a href="/{{ $page.UrlPath.Url }}/" title="{{ $page.Title }}">{{ $page.Title | safeHtml }}</a>{{ end }}{{ end }}{{ end }}
