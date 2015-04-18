@@ -8,12 +8,12 @@
 					<div id="page-{{ .Identifier }}" aria-labelledby="page-{{ .Identifier }}-heading" class="panel-collapse collapse{{ if $currentNode.HasMenuCurrent "sitenav" . }} in{{ end }}" role="tabpanel" >
 						<ul class="list-group">
 							{{ range .Children }}
-							<li class="list-group-item{{ if $currentNode.IsMenuCurrent "sitenav" . }} active2{{ end }}"><a href="{{ .Url }}">{{ .Pre }}{{ .Name }}{{ .Post }}</a></li>{{ end }}
+							<li class="list-group-item{{ if $currentNode.IsMenuCurrent "sitenav" . }} active2{{ end }}"><a href="{{ .URL }}">{{ .Pre }}{{ .Name }}{{ .Post }}</a></li>{{ end }}
 						</ul>
 					</div>
 					{{ else }}
 					<div id="page-{{ .Identifier }}-heading" class="panel-heading" role="tab">
-						<h4 class="panel-title"><a href="{{ .Url }}" data-parent="#sitenav">{{ .Pre }}{{ .Name }}{{ .Post }}</a></h4>
+						<h4 class="panel-title"><a href="{{ .URL }}" data-parent="#sitenav">{{ .Pre }}{{ .Name }}{{ .Post }}</a></h4>
 					</div>
 					{{ end }}{{ end }}
 				</div>

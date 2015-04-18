@@ -15,13 +15,13 @@
 					<a id="section-{{ .Identifier }}" class="dropdown-toggle" data-toggle="dropdown" href="#">{{ .Pre }}{{ .Name }}{{ .Post }}<span class="caret"></span></a>
 					<ul class="dropdown-menu" aria-labelledby="download">
 						{{ range .Children }}
-						<li{{ if $currentNode.HasMenuCurrent "sitenav" . }} class="active"{{ end }}><a href="{{ .Url }}">{{ .Pre }}{{ .Name }}{{ .Post }}</a></li>
+						<li{{ if $currentNode.HasMenuCurrent "sitenav" . }} class="active"{{ end }}><a href="{{ .URL }}">{{ .Pre }}{{ .Name }}{{ .Post }}</a></li>
 						{{ end }}
 					</ul>
 				</li>
 				{{ else }}
 				<li>
-					<a id="section-{{ .Identifier }}" href="{{ .Url }}">{{ .Pre }}{{ .Name }}{{ .Post }}</a>
+					<a id="section-{{ .Identifier }}" href="{{ .URL }}">{{ .Pre }}{{ .Name }}{{ .Post }}</a>
 				</li>
 				{{ end }}{{ end }} 
 			</ul>
