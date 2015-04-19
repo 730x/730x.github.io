@@ -23,7 +23,7 @@ video = ""
 +++
 
 
-{{< link "h2c" "H<sub>2</sub>C" >}}
+{{< link "article/h2c.md" "H<sub>2</sub>C" >}}
 
 {{< file "Utility-Alienware AlienFX-R202930.zip" >}}
 
