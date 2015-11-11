@@ -16,3 +16,7 @@ This is the location of the files used to generate the static site of 730x.org. 
 * Finalize file (drivers and software) storage/download setup
 * Create Image Showcase/Template (or just put inline?)
 * port existing content from old site
+* shortcodes
+	* file.html
+	* blockquote.html
+	* link.html

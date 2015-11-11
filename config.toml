@@ -49,3 +49,7 @@ paginatePath =               "page"
 	identifier = "chassis"
 	name = "Chassis"
 	weight = 4
+[[menu.sitenav]]
+	identifier = "download"
+	name = "Downloads"
+	weight = 5
